@@ -1,0 +1,78 @@
+// Variables
+
+// Colors
+
+$colors: (
+	'red': #FF4136,
+	'blue': #0074D9,
+	'yellow': #FFDC00,
+	'orange': #FF851B,
+	'gray-dark': #010101,
+	'gray': #2D2D2D,
+	'gray-light': #787677,
+	'brown': #AE8746,
+	'tan': #CFAE5D,
+	'putty': #C8AB7D,
+	'gold': #C9B060,
+	'cream': #EEE580,
+	'casablanca': #F1B95C,
+	'shuttle-gray': #5B6770,
+	'rice-cake': #ECEAE4,
+	'bright-gray': #56585c,
+	'very-light-gray': #C7C7C8,
+	'black-pearl': #0D1823,
+	'wild-willow': #a0ce6c,
+	'cream-can': #f3ba53,
+	'silver-sand': #c2c5c7,
+	'oslo-gray': #94979a,
+	'iron': #d0d3d5,
+	'cararra': #f4f3f1,
+	'gray-chateau': #9fa1a3,
+	'alice-blue': #EDF1F5,
+	'white-smoke': #F4F4F4,
+	'golden-tanoi': #ffcc66,
+
+	// primary:  #02727c,
+	// secondary: #313f50
+
+	primary:  #34C7A0,
+	secondary: rgb(67, 89, 99)
+);
+  
+$color-white:           #FFF;
+$color-black:           #000;
+  
+// Purpose Colors
+
+$base-font-color: $color-white;
+$action-color: #000;
+$hover-color: #fff;
+$base-background-color: $color-white;
+  
+$base-border-color: #000;
+$base-border: 1px solid $base-border-color;
+$base-border-radius: 2px;
+  
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.25);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+	
+
+
+// Font Sizes
+
+$regularSize: 12;
+
+
+// Font Families
+
+$helvetica: Helvetica, Arial, sans-serif;
+$padding: 15px;
+$borders: 15px;
+$small-spacing: 15px;
+$base-spacing: 30px;
+$grid-columns: 12;
+
+// Margin
+
+$main-margin: 200px;
+$secondary-margin: 60px;

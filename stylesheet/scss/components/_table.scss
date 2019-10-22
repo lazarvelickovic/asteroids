@@ -1,0 +1,49 @@
+// Style for table
+.table-container {
+  display: block;
+  margin: 60px;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    display: none;
+    @include box-shadow(0px, 3px, 9px, 0, rgba(color(secondary), 0.2));
+    
+    th {   
+      color: color(primary);
+      font-family: HelveticaNeueBold;
+      font-size: 1.3rem;
+      padding: 10px 7px;
+      cursor: pointer;
+  
+      span {
+        font-size: 1.2rem;
+      }
+  
+      img {
+        margin-bottom: 2px;
+      }
+    }
+    
+    td {
+      color: color(secondary);
+      font-size: 1rem;
+      padding: 7px 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    
+    a {
+      color: color(secondary);
+      &.active {
+        color: color(primary);
+      }
+    }
+  }
+  
+  table, th {
+    border: 1px solid color(primary);
+  }
+}

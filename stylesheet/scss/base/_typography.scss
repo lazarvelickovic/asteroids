@@ -1,0 +1,65 @@
+// Font Families 
+@include font-face(HelveticaNeueBold, HelveticaNeueBold);
+@include font-face(HelveticaNeueMedium, HelveticaNeueMedium);
+
+$base-font-family:     HelveticaNeueMedium;
+$body-font-family:      $base-font-family;
+$heading-font-family:   HelveticaNeueBold;
+ 
+// Font Sizes
+
+$base-font-size: 15px;
+
+// Line height
+
+$base-line-height:    1;
+$heading-line-height: 41px;
+
+// Body
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: subpixel-antialiased!important;
+  font-weight: 400;
+  height: 100%;
+}
+
+// Headings
+
+h1 {
+  font-family: $heading-font-family;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  line-height: $heading-line-height;
+  color: color(third);
+  font-size: 34px;
+}
+
+h2 {
+  font-family: $heading-font-family;
+  font-weight: 400;
+  letter-spacing: 0.91px;
+  line-height: 46px;
+  font-size: 38px;
+}
+
+h3 {
+  color: color(third);
+  font-family: $heading-font-family;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  line-height: 49px;
+  font-size: 40px;
+  text-align: center;
+}
+
+// Other elements 
+
+p {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.24px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Asteroids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="dist/style.min.css">
+  </head>
+  <body>
+
+    <!-- Index page main content -->
+    <main class="container" id="indexPage">
+
+      <!-- Form section -->
+      <section>
+        <form>
+          <div>
+            <label for="start-date" class="date-label">Start Date:</label>
+            <input type="date" name="start-date" id="startDate" />
+          </div>
+
+          <div>
+            <label for="end-date" class="date-label">End Date:</label>
+            <input type="date" name="end-date" id="endDate" />
+          </div>
+
+          <input type="button" class="btn" value="Show asteroids" id="showAsteroids" >
+        </form>
+      </section>
+
+      <!-- Table section -->
+      <section>
+        <div class="table-container">
+          <table id="asteroidTable">
+            <thead>
+              <tr>
+                <th>Date<img src="img/sorting-icon.gif" alt="Sorting Icon"></th>
+                <th>Name<img src="img/sorting-icon.gif" alt="Sorting Icon"></th>
+                <th>Speed <span>(km/h)</span><img src="img/sorting-icon.gif" alt="Sorting Icon"></th>
+                <th>Min Diameter <span>(m)</span><img src="img/sorting-icon.gif" alt="Sorting Icon"></th>
+                <th>Max Diameter <span>(m)</span><img src="img/sorting-icon.gif" alt="Sorting Icon"></th>
+              </tr>
+            </thead>
+            <tbody id="tableContent"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Autocomplete box section -->
+      <section class="autocomplete-box" id="autocompleteBox">
+        <div>
+          <label for="input-for-table">Choose asteroid from table</label>
+          <input type="text" class="input-for-table" list="datalistAsteroids" id="inputDatalist" />
+          <datalist id="datalistAsteroids"></datalist>
+        </div>
+
+        <div>
+          <p>Choosen asteroids</p>
+          <ul id="choosenAsteroids"></ul>
+          <button  class="btn" id="numOfPasses">Number of passes by Earth</button>
+        </div>
+      </section>
+      
+    </main>
+
+    <script type="text/javascript" src="dist/script.min.js"></script>
+  </body>
+</html>

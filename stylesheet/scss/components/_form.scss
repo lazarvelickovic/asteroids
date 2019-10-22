@@ -1,0 +1,26 @@
+// Style for form
+
+form {
+    padding: 10px;
+    width: 320px;
+    margin: 0 auto;
+
+    div {
+      @extend %flex;
+      align-items: center;
+      margin: 15px 0;
+
+      label {
+        font-size: 1.1rem;
+        color: color(secondary);
+        margin-right: 20px;
+      }
+      
+      input {
+        padding: 7px;
+        border: 1px solid color(primary);
+        @include roundedCorners(2px);
+        @include box-shadow(0px, 3px, 9px, 0, rgba(color(secondary), 0.2));
+      }
+    } 
+}

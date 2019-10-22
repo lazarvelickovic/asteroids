@@ -1,0 +1,19 @@
+// example: @include roundedCorners(10);
+
+@mixin roundedCorners($size) {
+    border-radius: $size;
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    -o-border-radius: $size;
+}
+
+@mixin roundedTopCorners($size) {
+  border-top-left-radius: $size + px;
+  -webkit-border-top-left-radius: $size + px;
+  -moz-border-top-left-radius: $size + px;
+  -o-border-top-left-radius: $size + px;
+  border-top-right-radius: $size + px;
+  -webkit-border-top-right-radius: $size + px;
+  -moz-border-top-right-radius: $size + px;
+  -o-border-top-right-radius: $size + px;
+}
